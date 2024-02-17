@@ -47,7 +47,7 @@ const Herosection = ({
             <p className="text-lg leading-8 text-gray-300 mt-10">{content}</p>
           </div>
           <Image
-            src="/rhdevs.png"
+            src="/s.png"
             width={500}
             height={500}
             alt=""
