@@ -1,42 +1,42 @@
 const Sidebar = () => {
   return (
-    <header className="sm:mr-5 lg:mr-10 xl:mr-20 2xl:mr-40 h-20 flex items-center justify-center sm:justify-end py-6">
-      <div className="flex flex-row sm:block py-2">
+    <header className="flex flex-row justify-between mt-3 w-full h-10 ">
+      <div className="w-1/5 flex flex-row justify-center ">
+        <img className=" h-10 object-contain" src="rhdevs.png" alt="" />
+      </div>
+      <div className="flex flex-row sm:block py-2 justify-between bg-gray-700 w-3/5 ">
         {links.map((x) => {
           return (
             <a
-              v-for="link in links"
-              className="font-medium text-gray-100 p-2 md:p-4"
+              key={x.name}
+              className="font-medium text-gray-100 p-2 md:p-4 grow"
             >
               {x.name}
             </a>
           );
         })}
       </div>
+      <div className="w-1/5">asd</div>
     </header>
   );
 };
 
 const links: link[] = [
   {
-    name: "Home",
+    name: "HOME",
     link: "/",
   },
   {
-    name: "Projects",
+    name: "ABOUT US",
     link: "/projects",
   },
   {
-    name: "About",
+    name: "PROJECTS",
     link: "/about",
   },
   {
-    name: "Timeline",
+    name: "RESOURCES",
     link: "/timeline",
-  },
-  {
-    name: "Contact me",
-    link: "/contact",
   },
 ];
 
