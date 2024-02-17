@@ -11,11 +11,8 @@ const Sidebar = () => {
         <div className="w-10 bg-red-200">ASD</div> */}
         {links.map((x) => {
           return (
-            <div>
-              <a
-                key={x.name}
-                className="font-medium text-gray-100 p-2 md:p-4 grow"
-              >
+            <div key={x.name}>
+              <a className="font-medium text-gray-100 p-2 md:p-4 grow">
                 {x.name}
               </a>
             </div>
