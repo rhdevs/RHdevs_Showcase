@@ -12,7 +12,7 @@ export default async function Home() {
 
 const Herosection = () => {
   return (
-    <div className="relative isolate overflow-hidden bg-gradient-to-b bg-gray-900">
+    <div className="relative isolate overflow-hidden bg-gradient-to-b bg-transparent">
       <div className="mx-auto max-w-7xl px-6 py-16 sm:py-30 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
           <div className="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
@@ -60,7 +60,7 @@ const features = [
 
 const Joinus = () => {
   return (
-    <div className="bg-black py-24 sm:py-16">
+    <div className="bg-transparent py-24 sm:py-16 bg-zinc-900 bg-dotted-spacing-16 bg-dotted-blue-800">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
           <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
