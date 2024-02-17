@@ -28,7 +28,13 @@ const introData = {
     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non quo debitis ratione quasi esse tempore tempora repellendus odio molestias facilis optio tenetur ipsa obcaecati fuga, eaque, at numquam nemo eos.",
 };
 
-const Herosection = ({ title, content }) => {
+const Herosection = ({
+  title,
+  content,
+}: {
+  title: string;
+  content: string;
+}) => {
   return (
     <div className="relative isolate overflow-hidden bg-gradient-to-b bg-transparent">
       <div className="mx-auto max-w-7xl px-6 py-16 sm:py-30 lg:px-8">
