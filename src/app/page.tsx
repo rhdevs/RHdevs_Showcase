@@ -3,28 +3,41 @@ import Wrapper from "./_components/wrapper";
 export default async function Home() {
   return (
     <Wrapper>
-      <Herosection></Herosection>
+      <Herosection
+        title={introData.title}
+        content={introData.content}
+      ></Herosection>
       <Joinus></Joinus>
-      <Herosection></Herosection>
+      <Herosection
+        title={sectionData.title}
+        content={sectionData.content}
+      ></Herosection>
     </Wrapper>
   );
 }
 
-const Herosection = () => {
+const sectionData = {
+  title: "CCA Events/ Bonding Sessions",
+  content:
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non quo debitis ratione quasi esse tempore tempora repellendus odio molestias facilis optio tenetur ipsa obcaecati fuga, eaque, at numquam nemo eos.",
+};
+
+const introData = {
+  title: "What we do",
+  content:
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non quo debitis ratione quasi esse tempore tempora repellendus odio molestias facilis optio tenetur ipsa obcaecati fuga, eaque, at numquam nemo eos.",
+};
+
+const Herosection = ({ title, content }) => {
   return (
     <div className="relative isolate overflow-hidden bg-gradient-to-b bg-transparent">
       <div className="mx-auto max-w-7xl px-6 py-16 sm:py-30 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
           <div className="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
             <h1 className="max-w-2xl text-white text-4xl font-bold tracking-tight sm:text-6xl lg:col-span-2 xl:col-auto">
-              What we do
+              {title}
             </h1>
-            <p className="text-lg leading-8 text-gray-300 mt-10">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-              voluptas obcaecati, earum quos eos debitis repudiandae blanditiis
-              ipsam est ab. Labore nemo aspernatur accusamus vero sapiente
-              perspiciatis molestiae odio voluptate?
-            </p>
+            <p className="text-lg leading-8 text-gray-300 mt-10">{content}</p>
           </div>
           <img
             src="https://images.unsplash.com/photo-1567532900872-f4e906cbf06a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1280&q=80"
