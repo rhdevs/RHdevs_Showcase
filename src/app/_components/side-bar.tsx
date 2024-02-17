@@ -4,7 +4,13 @@ const Sidebar = () => {
   return (
     <header className="flex flex-row justify-between mt-3 w-full h-10 ">
       <div className="w-1/5 flex flex-row justify-center ">
-        <Image className=" h-10 object-contain" src="rhdevs.png" alt="" />
+        <Image
+          className=" h-10 object-contain"
+          height={30}
+          width={30}
+          src="/rhdevs.png"
+          alt=""
+        />
       </div>
       <div className="flex flex-row  py-2 justify-between  w-3/5 ">
         {/* <div className="w-10 bg-red-200">ASD</div>
