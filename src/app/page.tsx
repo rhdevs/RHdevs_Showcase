@@ -4,57 +4,35 @@ import Wrapper from "./_components/wrapper";
 export default async function Home() {
   return (
     <Wrapper>
-      <Herosection
-        title={introData.title}
-        content={introData.content}
-      ></Herosection>
+      <Herosection></Herosection>
       <Joinus></Joinus>
-      <Herosection
-        title={sectionData.title}
-        content={sectionData.content}
-      ></Herosection>
+      <CCASection></CCASection>
     </Wrapper>
   );
 }
 
-const sectionData = {
-  title: "CCA Events/ Bonding Sessions",
-  content:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non quo debitis ratione quasi esse tempore tempora repellendus odio molestias facilis optio tenetur ipsa obcaecati fuga, eaque, at numquam nemo eos.",
-};
+// const sectionData = {
+//   title: "CCA Events/ Bonding Sessions",
+//   content:
+//     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non quo debitis ratione quasi esse tempore tempora repellendus odio molestias facilis optio tenetur ipsa obcaecati fuga, eaque, at numquam nemo eos.",
+// };
+//
+// const introData = {
+//   title: "What we do",
+//   content:
+//     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non quo debitis ratione quasi esse tempore tempora repellendus odio molestias facilis optio tenetur ipsa obcaecati fuga, eaque, at numquam nemo eos.",
+// };
 
-const introData = {
-  title: "What we do",
-  content:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non quo debitis ratione quasi esse tempore tempora repellendus odio molestias facilis optio tenetur ipsa obcaecati fuga, eaque, at numquam nemo eos.",
-};
-
-const Herosection = ({
-  title,
-  content,
-}: {
-  title: string;
-  content: string;
-}) => {
+const Herosection = () => {
   return (
-    <div className="relative isolate overflow-hidden bg-gradient-to-b bg-transparent">
-      <div className="mx-auto max-w-7xl px-6 py-16 sm:py-30 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
-          <div className="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
-            <h1 className="max-w-2xl text-white text-4xl font-bold tracking-tight sm:text-6xl lg:col-span-2 xl:col-auto">
-              {title}
-            </h1>
-            <p className="text-lg leading-8 text-gray-300 mt-10">{content}</p>
-          </div>
-          <Image
-            src="/s.png"
-            width={500}
-            height={500}
-            alt=""
-            className="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-12"
-          />
-        </div>
-      </div>
+    <div className="overflow-hidden bg-gradient-to-b bg-transparent flex justify-center">
+      <Image
+        src={"/rhdevs.svg"}
+        alt={"RHDevs Logo"}
+        width={179}
+        height={208}
+        className={"my-52"}
+      />
     </div>
   );
 };
@@ -63,20 +41,20 @@ const features = [
   {
     name: "Opportunitues",
     description:
-      "Commodo nec sagittis tortor mauris sed. Turpis tortor quis scelerisque diam id accumsan nullam tempus. Pulvinar etiam lacus volutpat eu. Phasellus praesent ligula sit faucibus.",
-    // icon: CloudArrowUpIcon,
+      "In RHDevs, you will have the chance to create meaningful apps for all RHesidents.",
+    icon: "/opportunities.png",
   },
   {
     name: "Experience",
     description:
-      "Pellentesque enim a commodo malesuada turpis eleifend risus. Facilisis donec placerat sapien consequat tempor fermentum nibh.",
-    // icon: LockClosedIcon,
+      "Gain hands-on experience in software engineering with ongoing projects.",
+    icon: "/experience.png",
   },
   {
     name: "Career",
     description:
-      "Pellentesque sit elit congue ante nec amet. Dolor aenean curabitur viverra suspendisse iaculis eget. Nec mollis placerat ultricies euismod ut condimentum.",
-    // icon: ArrowPathIcon,
+      "Have a headstart in your career as a software developer!",
+    icon: "/career.png",
   },
 ];
 
@@ -92,12 +70,18 @@ const Joinus = () => {
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
           <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
             {features.map((feature) => (
-              <div key={feature.name} className="flex flex-col">
-                <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-white">
-                  {/* <feature.icon className="h-5 w-5 flex-none text-indigo-400" aria-hidden="true" /> */}
-                  {feature.name}
-                </dt>
-                <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-300">
+              <div key={feature.name} className="flex flex-col items-center">
+                {/*<dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-white">*/}
+                {/*  /!* <feature.icon className="h-5 w-5 flex-none text-indigo-400" aria-hidden="true" /> *!/*/}
+                {/*  {feature.name}*/}
+                {/*</dt>*/}
+                <Image
+                  src={feature.icon}
+                  alt={""}
+                  width={158}
+                  height={158}
+                />
+                <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-300 text-center">
                   <p className="flex-auto">{feature.description}</p>
                 </dd>
               </div>
@@ -105,7 +89,7 @@ const Joinus = () => {
           </dl>
         </div>
         <div className="flex items-center justify-center mt-10">
-          <button className="">
+          <button className="bg-green-500 px-4 py-2 rounded border border-white border-solid">
             <h1 className="text-white mx-auto">Join Us</h1>
           </button>
         </div>
@@ -113,3 +97,26 @@ const Joinus = () => {
     </div>
   );
 };
+
+const CCASection = () => {
+  return (
+    <div className="flex justify-center my-20">
+      <div className="flex flex-col gap-10">
+        <h1 className="text-white text-4xl">
+          CCA Events/Bonding Sessions
+        </h1>
+        <div className="flex gap-10">
+          <Image
+            src={"/s.png"}
+            alt={"CCA Photo"}
+            width={534}
+            height={438}
+          />
+          <p className="text-white self-center">
+            Our very own CCA in action!
+          </p>
+        </div>
+      </div>
+    </div>
+  )
+}
