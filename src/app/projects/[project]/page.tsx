@@ -20,7 +20,6 @@ export default function Page({ params }: { params: { project: string } }) {
             className={`mr-2 mb-2 rounded-sm px-2 py-1 text-xs font-medium text-white bg-${stack.color}-600`}
           >
             {stack.name}
-            test
           </span>
         ))}
       </div>
@@ -82,6 +81,12 @@ export default function Page({ params }: { params: { project: string } }) {
     );
   };
 
+  // const Screenshot = () => {
+  //   return (
+
+  //   )
+  // };
+
   return (
     <Wrapper>
       <div className="mx-28 mt-16">
@@ -103,3 +108,4 @@ export default function Page({ params }: { params: { project: string } }) {
 // bg-blue-600
 // bg-black-600
 // bg-gray-600
+// bg-yellow-600

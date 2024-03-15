@@ -31,7 +31,7 @@ const allprojects: Project[] = [
         color: "green",
       },
       {
-        name: "Express",
+        name: "Vercel",
         color: "blue",
       },
       {
@@ -41,56 +41,55 @@ const allprojects: Project[] = [
     ],
     stats: [
       {
-        name: "Transport Operators Served",
-        description: "30",
+        name: "Users Served",
+        description: "800+",
       },
       {
         name: "Impact",
-        description: "50%",
+        description: "65%",
       },
       {
-        name: "Impact",
-        description: "21 Times",
+        name: "Project Reach",
+        description: "Hall Wide",
       },
     ],
     actions: [
       {
-        title: "Digital MTRAC Forms",
+        title: "Facility Booking",
         description:
-          "lorem ipsum dolor sit amet, consectetur adipisicing elit 1 Description 1",
+          "Easily book facilities like our gym, basketball court, and dance studio. With just a few clicks, you can secure your spot for your favourite activities.",
       },
       {
-        title: "Digital MTRAC Forms",
+        title: "Login Functionality",
         description:
-          "lorem ipsum dolor sit amet, consectetur adipisicing elit 1 Description 1",
+          "Easily login to your own personal account to make bookings, so that all other users know about it as well.",
       },
       {
-        title: "Digital MTRAC Forms",
+        title: "Posts Page",
         description:
-          "lorem ipsum dolor sit amet, consectetur adipisicing elit 1 Description 1",
+          "Able to create posts and share with the rest of the users of the RH App. Able to be used by hall leaders to broadcast information to the rest of the hall",
       },
-      {
-        title: "Action 2",
-        description: "Description 2",
-      },
+      // {
+      //   title: "",
+      //   description: "Description 2",
+      // },
     ],
   },
   {
     id: 2,
     name: "RH Announcement Bot",
-    description:
-      "MTRAC+ is an all in one platform built for Transport Operators (Drivers). Platform will allow TO's and Commanders to manage administrative procedures directly on the platform.",
+    description: "Make publicity within Raffles Hall easier and faster.",
     stack: [
       {
         name: "React",
         color: "blue",
       },
       {
-        name: "Node",
+        name: "Python",
         color: "green",
       },
       {
-        name: "Express",
+        name: "Docker",
         color: "blue",
       },
       {
@@ -100,48 +99,48 @@ const allprojects: Project[] = [
     ],
     stats: [
       {
-        name: "Transport Operators Served",
-        description: "30",
+        name: "Users Served",
+        description: "800+",
       },
       {
         name: "Impact",
-        description: "50%",
+        description: "100%",
       },
       {
-        name: "Impact",
-        description: "21 Times",
+        name: "Project Reach",
+        description: "Hall Wide",
       },
     ],
     actions: [
       {
-        title: "Digital MTRAC Forms",
+        title: "Message Broadcast",
         description:
-          "lorem ipsum dolor sit amet, consectetur adipisicing elit 1 Description 1",
+          "RH Announcement Bot is linked to all individual block channels and hall-wide channels, thus facilitating ease of announcement",
       },
       {
-        title: "Digital MTRAC Forms",
+        title: "Restricted Access",
         description:
-          "lorem ipsum dolor sit amet, consectetur adipisicing elit 1 Description 1",
+          "Only approved hall leaders and JCRC are given access to use the announcement bot to make announcements",
       },
       {
-        title: "Digital MTRAC Forms",
+        title: "Publicity",
         description:
-          "lorem ipsum dolor sit amet, consectetur adipisicing elit 1 Description 1",
+          "Easy and efficient solution to gain widespread publicity for hall-wide events.",
       },
-      {
-        title: "Action 2",
-        description: "Description 2",
-      },
+      // {
+      //   title: "Action 2",
+      //   description: "Description 2",
+      // },
     ],
   },
   {
     id: 3,
     name: "RH Superapp",
     description:
-      "MTRAC+ is an all in one platform built for Transport Operators (Drivers). Platform will allow TO's and Commanders to manage administrative procedures directly on the platform.",
+      "Events calendar for all the past and future hall events, for you to relive your memories.",
     stack: [
       {
-        name: "React",
+        name: "NextJS",
         color: "blue",
       },
       {
@@ -149,66 +148,66 @@ const allprojects: Project[] = [
         color: "green",
       },
       {
-        name: "Express",
+        name: "React",
         color: "blue",
       },
       {
-        name: "MongoDB",
+        name: "Vercel",
         color: "gray",
       },
     ],
     stats: [
       {
-        name: "Transport Operators Served",
-        description: "30",
+        name: "Users Served",
+        description: "800+",
       },
       {
         name: "Impact",
-        description: "50%",
+        description: "30%",
       },
       {
-        name: "Impact",
-        description: "21 Times",
+        name: "Project Reach",
+        description: "Hall Wide",
       },
     ],
     actions: [
       {
-        title: "Digital MTRAC Forms",
+        title: "Events Feature",
         description:
-          "lorem ipsum dolor sit amet, consectetur adipisicing elit 1 Description 1",
+          "Showcases all past and upcoming events hosted by Raffles Hall Clubs & Societies",
       },
       {
-        title: "Digital MTRAC Forms",
+        title: "Calendar",
         description:
-          "lorem ipsum dolor sit amet, consectetur adipisicing elit 1 Description 1",
+          "Has a calendar functionality which aids in ease of showcasing all events",
       },
-      {
-        title: "Digital MTRAC Forms",
-        description:
-          "lorem ipsum dolor sit amet, consectetur adipisicing elit 1 Description 1",
-      },
-      {
-        title: "Action 2",
-        description: "Description 2",
-      },
+      // {
+      //   title: "Digital MTRAC Forms",
+      //   description:
+      //     "lorem ipsum dolor sit amet, consectetur adipisicing elit 1 Description 1",
+      // },
+      // {
+      //   title: "Action 2",
+      //   description: "Description 2",
+      // },
     ],
   },
   {
     id: 4,
     name: "CV Automator",
     description:
-      "MTRAC+ is an all in one platform built for Transport Operators (Drivers). Platform will allow TO's and Commanders to manage administrative procedures directly on the platform.",
+      "Applying for a job? With your resume, we promise you that the job hunt will be a lot easier.",
     stack: [
       {
-        name: "React",
-        color: "blue",
+        name: "JavaScript",
+        color: "yellow",
       },
       {
         name: "Node",
         color: "green",
       },
       {
-        name: "Express",
+        name: "Python",
         color: "blue",
       },
       {
@@ -218,38 +217,38 @@ const allprojects: Project[] = [
     ],
     stats: [
       {
-        name: "Transport Operators Served",
-        description: "30",
+        name: "Users Served",
+        description: "0",
       },
       {
         name: "Impact",
-        description: "50%",
+        description: "0%",
       },
       {
-        name: "Impact",
-        description: "21 Times",
+        name: "Project Reach",
+        description: "Hall Wide",
       },
     ],
     actions: [
       {
-        title: "Digital MTRAC Forms",
+        title: "Web Scraping",
         description:
-          "lorem ipsum dolor sit amet, consectetur adipisicing elit 1 Description 1",
+          "Use our chrome extension on a job portal to scrape all available fields. This is to facilitate ease of input of relevant data.",
       },
       {
-        title: "Digital MTRAC Forms",
+        title: "Resume Extraction",
         description:
-          "lorem ipsum dolor sit amet, consectetur adipisicing elit 1 Description 1",
+          "Upload your CV/Resume into our chrome extension to extract all available fields such as Name, Email, Work Experience etc.",
       },
       {
-        title: "Digital MTRAC Forms",
+        title: "Automated Input",
         description:
-          "lorem ipsum dolor sit amet, consectetur adipisicing elit 1 Description 1",
+          "Automatically input all data from your resume into the job portal site.",
       },
-      {
-        title: "Action 2",
-        description: "Description 2",
-      },
+      // {
+      //   title: "Action 2",
+      //   description: "Description 2",
+      // },
     ],
   },
 ];
