@@ -4,7 +4,7 @@ import { allprojects } from "./_data";
 export default function ProjectsPage() {
   return (
     <Wrapper>
-      <div className="mx-10 sm:mx-auto max-w-3xl md:w-screen mt-10">
+      <div className="mx-10 sm:mx-auto max-w-4xl md:w-screen mt-10">
         <h1>Projects</h1>
         <hr className="border-grey mb-3" />
         <div className=" grow grid gap-x-8 gap-y-6 grid-cols-1 sm:grid-cols-2">
