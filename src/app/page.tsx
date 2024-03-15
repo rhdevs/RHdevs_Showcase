@@ -52,8 +52,7 @@ const features = [
   },
   {
     name: "Career",
-    description:
-      "Have a headstart in your career as a software developer!",
+    description: "Have a headstart in your career as a software developer!",
     icon: "/career.png",
   },
 ];
@@ -75,12 +74,7 @@ const Joinus = () => {
                 {/*  /!* <feature.icon className="h-5 w-5 flex-none text-indigo-400" aria-hidden="true" /> *!/*/}
                 {/*  {feature.name}*/}
                 {/*</dt>*/}
-                <Image
-                  src={feature.icon}
-                  alt={""}
-                  width={158}
-                  height={158}
-                />
+                <Image src={feature.icon} alt={""} width={158} height={158} />
                 <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-300 text-center">
                   <p className="flex-auto">{feature.description}</p>
                 </dd>
@@ -102,21 +96,17 @@ const CCASection = () => {
   return (
     <div className="flex justify-center my-20">
       <div className="flex flex-col gap-10">
-        <h1 className="text-white text-4xl">
-          CCA Events/Bonding Sessions
-        </h1>
+        <h1 className="text-white text-4xl">CCA Events/Bonding Sessions</h1>
         <div className="flex gap-10">
           <Image
-            src={"/s.png"}
+            src={"/bonding.jpg"}
             alt={"CCA Photo"}
             width={534}
             height={438}
           />
-          <p className="text-white self-center">
-            Our very own CCA in action!
-          </p>
+          <p className="text-white self-center">Our very own CCA in action!</p>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
