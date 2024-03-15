@@ -1,13 +1,12 @@
 import Wrapper from "../_components/wrapper";
+
 const page = () => {
   return (
     <Wrapper>
       <div className="mx-28 mt-16">
-        <h1 className="mb-8 text-4xl font-black leading-relaxed text-gray-800 dark:text-gray-200 md:text-5xl">
-          About
-        </h1>
+        <h1>About</h1>
         <hr className="border-grey mb-3" />
-        <h4 className="my-2 text-lg max-w-none text-gray-200">
+        <h4>
           Hi! I'm an aspiring software engineer with 2 years of web development
           experience. I worked as the head of NSFC Projects Team, an SAF
           digitalisation effort in my NS journey. In the 2 years I was in
@@ -19,9 +18,9 @@ const page = () => {
           made in the SAF.
         </h4>
         <div className="mt-16 w-full  flex-col justify-center flex">
-          <h2 className="my-6 text-5xl font-semibold text-gray-800 dark:text-gray-200 flex justify-center">
+          <h6 className="my-6 text-5xl font-semibold text-gray-800 dark:text-gray-200 flex justify-center">
             Excos
-          </h2>
+          </h6>
           <div className="flex flex-row">
             <Person name="Chuah Zi Yang" />
           </div>
