@@ -7,11 +7,11 @@ export default function ProjectsPage() {
       <div className="mx-28 mt-16">
         <h1>Projects</h1>
         <hr className="border-grey mb-3" />
-        <div className="grow grid gap-x-8 gap-y-6 grid-cols-1 sm:grid-cols-2">
+        <div className=" grow grid gap-x-8 gap-y-6 grid-cols-1 sm:grid-cols-2">
           {allprojects.map((project) => {
             return (
               <div key={project.name}>
-                <div className="flex-col flex">
+                <div className="flex-col flex border-[1px] border-gray-800">
                   <div className="h-48 flex bg-white"></div>
                   {/* <ImageItem srcimg={image} alt="asd" /> */}
                   <div className="flex flex-col pl-6 pr-3 py-2 justify-between h-32">
