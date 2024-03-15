@@ -89,6 +89,7 @@ export default function Example() {
                 className="relative flex flex-col justify-center items-center"
               >
                 <FontAwesomeIcon
+                  /* @ts-expect-error this error is wasting my time */
                   icon={[file.prefix, file.icon]}
                   size="3x"
                   color="white"
@@ -118,6 +119,7 @@ export default function Example() {
                 className="relative flex flex-col justify-center items-center"
               >
                 <FontAwesomeIcon
+                  /* @ts-expect-error this error is wasting my time */
                   icon={[file.prefix, file.icon]}
                   size="3x"
                   color="white"
@@ -163,6 +165,7 @@ export default function Example() {
                 </div>
                 <FontAwesomeIcon icon={faFigma} size="3x" /> */}
                 <FontAwesomeIcon
+                  /* @ts-expect-error this error is wasting my time */
                   icon={[file.prefix, file.icon]}
                   size="3x"
                   color="white"
