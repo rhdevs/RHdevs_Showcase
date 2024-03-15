@@ -30,7 +30,10 @@ const Sidebar = () => {
       </div>
       <div className="flex flex-row px-2 py-2 justify-center w-1/5">
         <div key={button.name}>
-          <a className="text-gray-100 md:px-6 md:py-3 grow bg-blue-500 hover:bg-blue-700 font-bold py-2 px-2 border border-blue-700 rounded">
+          <a
+            href={button.link}
+            className="text-gray-100 md:px-6 md:py-3 grow bg-blue-500 hover:bg-blue-700 font-bold py-2 px-2 border border-blue-700 rounded"
+          >
             {button.name}
           </a>
         </div>
@@ -54,13 +57,13 @@ const links: link[] = [
   },
   {
     name: "RESOURCES",
-    link: "/timeline",
+    link: "/resources",
   },
 ];
 
 const button: link = {
   name: "JOIN US!",
-  link: "/join-us",
+  link: "/login",
 };
 
 interface link {

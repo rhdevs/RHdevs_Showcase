@@ -7,15 +7,11 @@ const page = () => {
         <h1>About</h1>
         <hr className="border-grey mb-3" />
         <h4>
-          Hi! I'm an aspiring software engineer with 2 years of web development
-          experience. I worked as the head of NSFC Projects Team, an SAF
-          digitalisation effort in my NS journey. In the 2 years I was in
-          Projects Team, I had the opportunity to work on army wide projects,
-          such as the MTRAC+ platform, where we currently serve 20k Transport
-          Operators(Drivers) in their day to day operations. I am a self
-          directed learner, whos self-taught web development. Do checkout the
-          projects tab for more information about my projects and the impact I
-          made in the SAF.
+          We are Raffles Hall Developers, a multi-disciplinary team of students
+          from Raffles Hall who are learning and experimenting the intricacies
+          of a Tech Team. Currently, we are designing and developing a CV Job
+          Automation App to serve our residents, and we have created various
+          apps and websites to be used for members of our hall.
         </h4>
         <div className="mt-16 w-full  flex-col justify-center flex">
           <h6 className="my-6 text-5xl font-semibold text-gray-800 dark:text-gray-200 flex justify-center">
@@ -119,14 +115,14 @@ const people: Person[] = [
     instagramUrl: "#",
   },
   {
-    name: "Kwang Yang",
+    name: "Kwang Yang Chia",
     role: "RHDevs Head",
     imageUrl: "ky.jpg",
     linkedinUrl: "#",
     instagramUrl: "#",
   },
   {
-    name: "Manoj Mahender",
+    name: "Manoj Narender",
     role: "Backend Head",
     imageUrl: "manoj.jpg",
     linkedinUrl: "#",

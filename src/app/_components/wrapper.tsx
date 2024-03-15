@@ -3,7 +3,7 @@ import Sidebar from "./side-bar";
 
 const Wrapper = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="sm:max-w-screen flex min-h-screen flex-col bg-black bg-dotted-spacing-16 bg-dotted-blue-800 justify-between">
+    <div className="sm:max-w-screen flex min-h-screen flex-col bg-black justify-between">
       <Sidebar></Sidebar>
       <div className="flex flex-col grow ">{children}</div>
       <Footerbar></Footerbar>
