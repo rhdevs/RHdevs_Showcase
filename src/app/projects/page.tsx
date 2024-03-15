@@ -1,42 +1,5 @@
 import Wrapper from "../_components/wrapper";
-
-interface project {
-  name: string;
-  linktoproject: string;
-  linktoinfo: string;
-  image: string;
-  workinglink: boolean;
-  description: string;
-}
-const projects: project[] = [
-  {
-    name: "MTRAC+",
-    linktoproject: "https://mtrac.ternary.digital",
-    linktoinfo: "mtrac",
-    image: "mtraccover",
-    description:
-      "MTRAC+ is an all in one platform for Transport Operators to manage their Driving Currency, fill MTRAC+ Forms, and allow Commanders to counter-sign MTRAC+ Forms.",
-    workinglink: true,
-  },
-  {
-    name: "EMOB+",
-    description:
-      "EMOB+ is a system developed to streamline the process of Mob Manning by allowing commanders to mark servicemen via a QR Code.",
-    linktoproject: "https://e-mob.herokuapp.com/",
-    linktoinfo: "emob",
-    image: "emobcover",
-    workinglink: true,
-  },
-  {
-    name: "Bibo App",
-    linktoproject: "https://emob.ternary.digital",
-    description:
-      "Bibo app is a web app developed to improve the process of accounting for strength daily",
-    linktoinfo: "bibo",
-    image: "bibocover",
-    workinglink: false,
-  },
-];
+import { allprojects } from "./_data";
 
 export default function ProjectsPage() {
   return (
@@ -45,7 +8,7 @@ export default function ProjectsPage() {
         <h1>Projects</h1>
         <hr className="border-grey mb-3" />
         <div className="grow grid gap-x-8 gap-y-6 grid-cols-1 sm:grid-cols-2">
-          {projects.map((project) => {
+          {allprojects.map((project) => {
             return (
               <div key={project.name}>
                 <div className="flex-col flex">
@@ -59,12 +22,12 @@ export default function ProjectsPage() {
                       {project.description}
                     </h6>
                     <div className="flex flex-row justify-between">
-                      <a href={`projects/${project.linktoinfo}`} target="_">
+                      <a href={`projects/${project.id}`} target="_">
                         <h6 className="text-xl font-medium leading-6 text-blue-500 hover:text-blue-600 dark:hover:text-blue-400">
                           Learn more →
                         </h6>
                       </a>
-                      {project.workinglink && (
+                      {/* {project.workinglink && (
                         <a href={project.linktoproject} target="_">
                           <svg
                             className="w-6 h-6 text-gray-800 dark:text-white"
@@ -84,7 +47,7 @@ export default function ProjectsPage() {
                             />
                           </svg>
                         </a>
-                      )}
+                      )} */}
                     </div>
                   </div>
                 </div>
