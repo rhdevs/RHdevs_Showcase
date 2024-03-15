@@ -7,7 +7,6 @@ import {
 // import DiscordProvider from "next-auth/providers/discord";
 import GitHubProvider from "next-auth/providers/github";
 
-import { env } from "~/env";
 import { db } from "~/server/db";
 
 /**

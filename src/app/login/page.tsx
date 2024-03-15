@@ -1,6 +1,6 @@
 import Wrapper from "../_components/wrapper";
 
-export default function Page() {
+export default async function Page() {
   return (
     <Wrapper>
       <div className="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
@@ -66,7 +66,7 @@ export default function Page() {
           <p className="mt-10 text-center text-sm text-gray-500">
             Not a member? Click{" "}
             <a
-              href="#"
+              href="/signup"
               className="font-semibold leading-6 text-blue-500 hover:text-blue-700"
             >
               here
