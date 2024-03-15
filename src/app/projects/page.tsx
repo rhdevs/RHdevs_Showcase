@@ -12,8 +12,13 @@ export default function ProjectsPage() {
             return (
               <div key={project.name}>
                 <div className="flex-col flex border-[1px] border-gray-800">
-                  <div className="h-48 flex bg-white"></div>
-                  {/* <ImageItem srcimg={image} alt="asd" /> */}
+                  <div className="h-48 flex bg-white">
+                    <img
+                      className="object-fit"
+                      src={project.picture}
+                      alt="asd"
+                    />
+                  </div>
                   <div className="flex flex-col pl-6 pr-3 py-2 justify-between h-32">
                     <h5 className="dark:text-white text-2xl font-bold leading-8 tracking-tight">
                       {project.name}

@@ -14,6 +14,7 @@ export type Project = {
     title: string;
     description: string;
   }[];
+  picture: string;
 };
 
 const allprojects: Project[] = [
@@ -74,6 +75,7 @@ const allprojects: Project[] = [
         description: "Description 2",
       },
     ],
+    picture: "telebot.jpg",
   },
   {
     id: 2,
@@ -133,6 +135,7 @@ const allprojects: Project[] = [
         description: "Description 2",
       },
     ],
+    picture: "telebot.jpg",
   },
   {
     id: 3,
@@ -192,6 +195,7 @@ const allprojects: Project[] = [
         description: "Description 2",
       },
     ],
+    picture: "telebot.jpg",
   },
   {
     id: 4,
@@ -251,6 +255,7 @@ const allprojects: Project[] = [
         description: "Description 2",
       },
     ],
+    picture: "telebot.jpg",
   },
 ];
 
