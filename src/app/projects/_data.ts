@@ -75,7 +75,7 @@ const allprojects: Project[] = [
       //   description: "Description 2",
       // },
     ],
-    picture: "telebot.jpg",
+    picture: "rhapp.png",
   },
   {
     id: 2,
@@ -194,7 +194,7 @@ const allprojects: Project[] = [
       //   description: "Description 2",
       // },
     ],
-    picture: "telebot.jpg",
+    picture: "rhsuperapp.png",
   },
   {
     id: 4,
@@ -254,7 +254,7 @@ const allprojects: Project[] = [
       //   description: "Description 2",
       // },
     ],
-    picture: "telebot.jpg",
+    picture: "job-project.png",
   },
 ];
 
