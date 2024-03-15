@@ -96,7 +96,7 @@ export default function Example() {
                 <a
                   href={file.link}
                   download={file.title}
-                  className="mt-2 py-2 text-l font-semibold tracking-tight text-white sm:text-xl"
+                  className="mt-2 py-2 text-l font-semibold tracking-tight text-white sm:text-xl hover:text-gray-500"
                 >
                   {file.title}
                 </a>
@@ -125,7 +125,7 @@ export default function Example() {
                 <a
                   href={file.link}
                   download={file.title}
-                  className="mt-2 py-2 text-l font-semibold tracking-tight text-white sm:text-xl"
+                  className="mt-2 py-2 text-l font-semibold tracking-tight text-white sm:text-xl hover:text-gray-500"
                 >
                   {file.title}
                 </a>
@@ -170,7 +170,7 @@ export default function Example() {
                 <a
                   href={file.link}
                   download={file.title}
-                  className="mt-2 py-2 text-l font-semibold tracking-tight text-white sm:text-xl"
+                  className="mt-2 py-2 text-l font-semibold tracking-tight text-white sm:text-xl hover:text-gray-500"
                 >
                   {file.title}
                 </a>
