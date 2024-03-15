@@ -84,7 +84,7 @@ const Joinus = () => {
         </div>
         <div className="flex items-center justify-center mt-10">
           <button className="bg-green-500 px-4 py-2 rounded border border-white border-solid">
-            <h1 className="text-white mx-auto">Join Us</h1>
+            <h6 className="text-white mx-auto">Join Us</h6>
           </button>
         </div>
       </div>
@@ -104,7 +104,9 @@ const CCASection = () => {
             width={534}
             height={438}
           />
-          <p className="text-white self-center">Our very own CCA in action!</p>
+          <p className="text-white self-center">
+            Our very own CCA at our first RHDevs cohesion! Welcome Freshies :)
+          </p>
         </div>
       </div>
     </div>
