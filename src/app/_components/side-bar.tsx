@@ -18,7 +18,10 @@ const Sidebar = () => {
         {links.map((x) => {
           return (
             <div key={x.name}>
-              <a className="font-medium text-gray-100 p-2 md:p-4 grow">
+              <a
+                href={x.link}
+                className="font-medium text-gray-100 p-2 md:p-4 grow"
+              >
                 {x.name}
               </a>
             </div>
@@ -43,11 +46,11 @@ const links: link[] = [
   },
   {
     name: "ABOUT US",
-    link: "/projects",
+    link: "/aboutus",
   },
   {
     name: "PROJECTS",
-    link: "/about",
+    link: "/projects",
   },
   {
     name: "RESOURCES",
@@ -55,11 +58,10 @@ const links: link[] = [
   },
 ];
 
-const button: link =
-  {
-    name: "JOIN US!",
-    link: "/join-us",
-  }
+const button: link = {
+  name: "JOIN US!",
+  link: "/join-us",
+};
 
 interface link {
   name: string;
