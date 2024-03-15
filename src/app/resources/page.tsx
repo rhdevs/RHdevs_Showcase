@@ -4,7 +4,7 @@ const frontend = [
   {
     title: "Intro to React",
     image: "file.jpeg",
-    link: "/file.png",
+    link: "/intro-to-react.pptx",
   },
   {
     title: "Intro to Redux",
