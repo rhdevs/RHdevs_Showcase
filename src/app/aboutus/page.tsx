@@ -3,7 +3,7 @@ import Wrapper from "../_components/wrapper";
 const page = () => {
   return (
     <Wrapper>
-      <div className="mx-28 mt-16">
+      <div className="mx-10 sm:mx-auto max-w-4xl md:w-screen mt-10">
         <h1>About</h1>
         <hr className="border-grey mb-3" />
         <h4>

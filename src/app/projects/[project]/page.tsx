@@ -89,7 +89,7 @@ export default function Page({ params }: { params: { project: string } }) {
 
   return (
     <Wrapper>
-      <div className="mx-28 mt-16">
+      <div className="mx-10 sm:mx-auto max-w-4xl md:w-screen mt-10">
         <h1>{project.name}</h1>
         <h3>{project.description}</h3>
         <h2>Stack</h2>
