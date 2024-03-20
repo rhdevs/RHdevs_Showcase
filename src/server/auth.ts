@@ -4,8 +4,12 @@ import {
   type DefaultSession,
   type NextAuthOptions,
 } from "next-auth";
+
 // import DiscordProvider from "next-auth/providers/discord";
 import GitHubProvider from "next-auth/providers/github";
+import EmailProvider from "next-auth/providers/email";
+import GoogleProvider from "next-auth/providers/google";
+import CredentialsProvider from "next-auth/providers/credentials";
 
 import { db } from "~/server/db";
 
@@ -46,15 +50,62 @@ export const authOptions: NextAuthOptions = {
     }),
   },
   adapter: PrismaAdapter(db),
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
   providers: [
     // DiscordProvider({
     //   clientId: env.DISCORD_CLIENT_ID,
     //   clientSecret: env.DISCORD_CLIENT_SECRET,
     // }),
+    CredentialsProvider({
+      name: "Email",
+      credentials: {
+        email: { label: "Email", type: "text" },
+        password: { label: "Password", type: "password" },
+      },
+      async authorize(credentials, req) {
+        // const res = await fetch("http://localhost:3000/login", {
+        //   method: "POST",
+        //   body: JSON.stringify(credentials),
+        //   headers: { "Content-Type": "application/json" },
+        // });
+
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+        // const user = await res.json();
+
+        // FOR NOW THIS IS THE HARDCODED VERSION!!!!
+        const user = {
+          id: "42",
+          email: "farhanmnavas@gmail.com",
+          password: "password",
+        };
+
+        if (
+          credentials?.email === user.email &&
+          credentials?.password == user.password
+        ) {
+          return user;
+        }
+        // END OF HARDCODED SECTION!!!! DELETE WHEN DONE
+
+        // if (res.ok && user) {
+        //   // eslint-disable-next-line @typescript-eslint/no-unsafe-return
+        //   return user;
+        // }
+        return null;
+      },
+    }),
     GitHubProvider({
       clientId: process.env.GITHUB_ID ?? " ",
       clientSecret: process.env.GITHUB_SECRET ?? " ",
     }),
+    // GoogleProvider({
+    //   clientId: process.env.GOOGLE_ID ?? " ",
+    //   clientSecret: process.env.GOOGLE_SECRET ?? " ",
+    // }),
+    // EmailProvider({
+    //   server: process.env.EMAIL_SERVER,
+    //   from: process.env.EMAIL_FROM,
+    // }),
     /**
      * ...add more providers here.
      *
@@ -65,6 +116,9 @@ export const authOptions: NextAuthOptions = {
      * @see https://next-auth.js.org/providers/github
      */
   ],
+  // pages: {
+  //   signIn: "/login",
+  // },
 };
 
 /**

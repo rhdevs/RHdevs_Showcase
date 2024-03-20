@@ -93,6 +93,7 @@ export default function Example() {
                   icon={[file.prefix, file.icon]}
                   size="3x"
                   color="white"
+                  className="hover:scale-110 hover:transition-all"
                 />
                 <a
                   href={file.link}
@@ -123,6 +124,7 @@ export default function Example() {
                   icon={[file.prefix, file.icon]}
                   size="3x"
                   color="white"
+                  className="hover:scale-110 hover:transition-all"
                 />
                 <a
                   href={file.link}
@@ -169,6 +171,7 @@ export default function Example() {
                   icon={[file.prefix, file.icon]}
                   size="3x"
                   color="white"
+                  className="hover:scale-110 hover:transition-all"
                 />
                 <a
                   href={file.link}
