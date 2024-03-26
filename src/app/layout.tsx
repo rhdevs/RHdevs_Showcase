@@ -3,7 +3,6 @@ import "~/styles/globals.css";
 import { Inter } from "next/font/google";
 
 import { TRPCReactProvider } from "~/trpc/react";
-import { useSelectedLayoutSegment } from "next/navigation";
 
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
@@ -12,6 +11,12 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { far } from "@fortawesome/free-regular-svg-icons";
+
+import { cookies } from "next/headers";
+import { authOptions } from "~/server/auth";
+import { Providers } from "./_components/providers";
+import { getServerSession } from "next-auth";
+
 library.add(fab, fas, far);
 
 const inter = Inter({
@@ -25,6 +30,8 @@ export const metadata = {
   icons: [{ rel: "icon", url: "/rhdevs.png" }],
 };
 
+const serverSession = await getServerSession(authOptions);
+
 export default function RootLayout({
   children,
 }: {
@@ -33,7 +40,11 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={`font-sans ${inter.variable}`}>
-        <TRPCReactProvider>{children}</TRPCReactProvider>
+        <Providers serverSession={serverSession}>
+          <TRPCReactProvider cookies={cookies().toString()}>
+            {children}
+          </TRPCReactProvider>
+        </Providers>
       </body>
     </html>
   );

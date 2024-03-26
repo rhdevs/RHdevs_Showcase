@@ -1,4 +1,5 @@
 import Image from "next/image";
+// import AuthButton from "./auth-button";
 
 const Sidebar = () => {
   return (
@@ -36,6 +37,7 @@ const Sidebar = () => {
           >
             {button.name}
           </a>
+          {/* <AuthButton></AuthButton> */}
         </div>
       </div>
     </header>

@@ -74,16 +74,21 @@ export const authOptions: NextAuthOptions = {
 
         // FOR NOW THIS IS THE HARDCODED VERSION!!!!
         const user = {
-          id: "42",
-          email: "farhanmnavas@gmail.com",
-          password: "password",
+          id: "1",
+          email: "farhan",
+          password: "12345",
         };
 
-        if (
-          credentials?.email === user.email &&
-          credentials?.password == user.password
-        ) {
-          return user;
+        try {
+          if (
+            credentials?.email === user.email &&
+            credentials?.password === user.password
+          ) {
+            return user;
+          }
+        } catch (error) {
+          console.log(error);
+          throw error;
         }
         // END OF HARDCODED SECTION!!!! DELETE WHEN DONE
 
@@ -127,3 +132,10 @@ export const authOptions: NextAuthOptions = {
  * @see https://next-auth.js.org/configuration/nextjs
  */
 export const getServerAuthSession = () => getServerSession(authOptions);
+
+// export const getServerAuthSession = (ctx: {
+//   req: GetServerSidePropsContext["req"];
+//   res: GetServerSidePropsContext["res"];
+// }) => {
+//   return getServerSession(ctx.req, ctx.res, authOptions);
+// };

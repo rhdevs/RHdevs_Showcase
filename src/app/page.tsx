@@ -1,12 +1,22 @@
+// "use client";
+
 import Image from "next/image";
 import Wrapper from "./_components/wrapper";
+import { getServerSession } from "next-auth";
+import { authOptions } from "~/server/auth";
+import { useSession } from "next-auth/react";
 
 export default async function Home() {
+  const session = await getServerSession(authOptions);
+
+  // const { data: session, status } = useSession();
+
   return (
     <Wrapper>
       <Herosection></Herosection>
       <Joinus></Joinus>
-      <CCASection></CCASection>
+      {session ? <CCASection></CCASection> : JSON.stringify(session)}
+      {/* <CCASection></CCASection> */}
     </Wrapper>
   );
 }
